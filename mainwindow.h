@@ -4,7 +4,14 @@
 #include <QApplication>
 #include <QMainWindow>
 #include <QMenuBar>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QMenu>
+#include <QLabel>
+#include <QPixmap>
+#include <QDockWidget>
+#include <QPainter>
+#include "dockl.h"
 
 class MainWindow : public QMainWindow
 {
@@ -14,9 +21,11 @@ public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
     void create_menu(void);
+    void create_docks(void);
 
 private:
-    //QMenu* m_menu_fichier;
+    QHBoxLayout* m_h_layout;
+    QPainter* m_painter;
 };
 
 #endif // MAINWINDOW_H

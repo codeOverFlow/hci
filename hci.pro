@@ -4,15 +4,24 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui widgets
 
 TARGET = hci
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp\
+        colorpickerwidget.cpp\
+        colorviewer.cpp\
+        qtcolortriangle.cpp\
+        screen.cpp \
+    dockl.cpp
 
-HEADERS  += mainwindow.h
+
+HEADERS  += mainwindow.h\
+        colorpickerwidget.h\
+        colorviewer.h\
+        qtcolortriangle.h\
+        screen.h \
+    dockl.h
